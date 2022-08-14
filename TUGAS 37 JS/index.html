@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Belajar Javascript</title>
+    </head>
+
+    <body>
+
+        <!-- tugass 37  -->
+
+         <button type="button" onclick="tombol()" name="button">Jalankan</button>
+            <br />
+            <br />
+            <hr />
+            Atribut <b>getNamedItem()</b> :
+            <p id="contoh1">contoh</p>
+            <hr />
+            Atribut <b>name()</b> :
+            <p id="contoh2">contoh</p>
+            <hr />
+            Atribut <b>length()</b> :
+            <p id="contoh3">contoh</p>
+            <hr />
+
+        <script type="text/javascript">
+
+            function tombol() {
+                var a = document.getElementsByTagName("button")[0];
+                var b = a.attributes.getNamedItem("onclick").value;
+
+                document.getElementById("contoh1").innerHTML = b;
+                
+                var c = document.getElementsByTagName("button")[0];
+                var d = c.attributes[0].name;
+
+                document.getElementById("contoh2").innerHTML = d ;
+
+                var e = document.getElementsByTagName("button")[0];
+                var f = e.attributes.length;
+
+                document.getElementById("contoh3").innerHTML = f ;
+
+
+                
+            }
+
+            
+
+
+        </script>
+        
+        <!-- //Atribute item// -->
+        <!-- <button type="button" onclick="tombol()" name="button">klik</button>
+        <P id="contoh">contoh</P> -->
+
+
+        <!-- <script type="text/javascript">
+
+            function tombol(){
+                var a = document.getElementsByTagName("button")[0];
+                var b = a.attributes.item(0).name;
+                // document.getElementById("contoh").innerHTML = b;
+                document.getElementById("contoh").innerHTML = "berhasil diubah!!";
+            }
+
+
+        </script> -->
+
+
+        <!-- //atribute getNamedItem -->
+
+        <!-- <button type="button" onclick="Tombol()" name="button">klik</button>
+        <P id="contoh">contoh</P>
+        
+        <script type="text/javascript">
+            function Tombol() {
+
+                var c = document.getElementsByTagName("button")[0];
+                var d = c.attributes.getNamedItem("onclick").value;
+
+                document.getElementById("contoh").innerHTML = d;
+                
+            }
+        </script> -->
+
+         <!-- //atribute length -->
+
+         <!-- <button type="button" onclick="Tombol()" name="button">klik</button>
+         <P id="contoh">contoh</P>
+
+            <script type="text/javascript">
+                function Tombol(){
+                    var a = document.getElementsByTagName("button")[0];
+                    var b = a.attributes.length;
+
+                    document.getElementById("contoh").innerHTML = b;
+                }
+
+            </script> -->
+
+            <!-- //atribute name -->
+
+        <!-- <button type="button" onclick="Tombol()" name="button">klik</button>
+            <P id="contoh">contoh</P>
+
+            <script type="text/javascript">
+                function Tombol(){
+                    var a = document.getElementsByTagName("button")[0];
+                    var b = a.attributes[2].name;
+
+                    document.getElementById("contoh").innerHTML= b ;
+                }
+
+            </script> -->
+    </body>
+
+</html> 
