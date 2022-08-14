@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Belajar JavaScript - NIOMIC</title>
+    </head>
+
+    <body>
+        <button type="button" onclick="Tombol()" name="button">Jalankan</button>
+        <br />
+        <br />
+        <hr />
+        <b>Active Element</b> Property : <br />
+        <p id="contoh">contoh</p>
+        <hr />
+        <b>addEventListener()</b> Property : <br />
+        <p id="contoh1">contoh</p>
+        <hr />
+        <b>Anchor</b> Property (<a name="jeruk" href="#">Jeruk</a>
+        <a name="semangka" href="#">Semangka</a>) : <br />
+        <p id="contoh2">contoh</p>
+        <hr />
+
+        <script type="text/javascript">
+            function Tombol() {
+                var a = document.activeElement.tagName;
+                document.getElementById("contoh").innerHTML=a;
+                
+                document.addEventListener("click",function(){
+                document.getElementById("contoh1").innerHTML="suskes ! Merubah addEventListener()";
+            });
+
+                var a = document.anchors.length;
+                document.getElementById("contoh2").innerHTML=a;
+            }
+
+        </script>
+ </body>
+
+
+
+    <!-- <body>
+        <a name="sumatera" href="#"> Pulau Sumatera</a><br/>
+        <a name="jawa" href="#"> Pulau Jawa</a><br/>
+        <a name="kalimantan" href="#"> Pulau Kalimantan</a><br/>
+        <a name="papua" href="#"> Pulau Papua</a><br/>
+
+        <p id="contoh">contoh</p>
+        <button onclick="Tombol()"> Klik</button>
+
+        <script>
+            function Tombol() {
+                vocar a = dument.anchors.length;
+                document.getElementById("contoh").innerHTML=a;
+                
+                
+            }
+        </script>
+
+    </body>  -->
+        
+    <!-- open and close
+    <body>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo natus pariatur, explicabo optio accusamus, at voluptate perferendis nulla ab, repudiandae facere maxime quibusdam? Nesciunt amet assumenda, distinctio illum dolores natus.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores incidunt dolore provident reiciendis voluptatum debitis aliquam inventore suscipit iste molestiae repellat exercitationem, animi ex, unde culpa delectus natus. Pariatur, eos.
+
+        </p>
+        <button onclick="Tombol()"> Klik</button>
+
+        <script type="text/javascript">
+            function Tombol() {
+                document.open();
+                document.write("<h1>Hello World sukses !! </h1>");
+                document.close();
+                
+            }
+
+        </script>
+    </body> -->
+
+    <!-- active elemet proprty -->
+    <!-- <body onclick="Tombol()">
+        <p>
+            Nama Lengkap
+            <input type="text" value="Field"/>
+            <button>Klik</button>
+        </p>
+        <p id="contoh">contoh</p>
+
+        <script type="text/javascript">
+            function Tombol() {
+                var a = document.activeElement.tagName;
+                document.getElementById("contoh").innerHTML=a;
+            }
+            
+
+
+        </script>
+    </body> -->
+    
+
+    <!-- addEventListener() Property -->
+    <!-- <body>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Minima esse temporibus, reiciendis molestias at sint inventore ab earum iure commodi 
+            cumque totam quae voluptates animi fugit ea. Praesentium, soluta deserunt!
+        </p>
+
+        <p id="contoh">contoh</p>
+
+        <script type="text/javascript">
+            document.addEventListener("click",function(){
+                document.getElementById("contoh").innerHTML="suskes ! kode berhasil dirubah :)";
+            });
+        </script>
+    </body> -->
+
+
+
+
+    <!-- open and close property -->
+</html>
