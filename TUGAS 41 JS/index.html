@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="utf-8"/>
+        <title>Belajar JavaScript -Niomic</title>
+    </head>
+    <!-- load event -->
+    <!-- click event -->
+    <!-- double click event -->
+    <!-- change event -->
+    <body>
+        <p>Pilih Warna Bacground</p>
+
+        <select id="mySelect" onchange="myFunction()">
+            <option value="red">Merah</option>
+            <option value="blue">Biru</option>
+            <option value="yellow">Kuning</option>
+            <option value="white">Putih</option>
+        </select>
+
+        <p>Saat Kamu Memilih Warna , Bacground Akan Berubah</p>
+
+        <script type="text/javascript">
+            function myFunction() {
+                var x = document.getElementById("mySelect").value;
+                document.body.style.backgroundColor = x;
+                
+            }
+        </script>
+
+    </body>
+
+
+    <!-- <body onload="Tampil()"> -->
+
+        <!-- <h1>Ini Adalah ondblclik event</h1>
+        <p>Double click event akan berjalan pada saat tombol button diclick 2x</p>
+
+        <p id="id3">click akan memangil fungsi pada click.js</p>
+        <button ondblclick="click_saya()">Double click saya</button>
+        <p id="clicked"></p>
+
+        <script type="text/javascript" src="click.js"></script> -->
+
+        <!-- <p>Pilih Menu Makanan</p>
+
+        <select id="menu" onchange="pilih_menu()">
+            <option value="Nasi Goreng" >Nasi Goreng</option>
+            <option value="Ayam Goreng" >Ayam Goreng</option>
+            <option value="Bebek Goreng" >Bebek Goreng</option>
+            <option value="Udang Goreng" >Udang Goreng</option>
+            <option value="Ayam Bakar" >Ayam Bakar</option>
+        </select>
+
+        <p id="clicked"></p>
+
+        <script type="text/javascript" src="change.js"></script>
+    </body> -->
+
+</html>
