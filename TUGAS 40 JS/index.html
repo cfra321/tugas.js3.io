@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Belajar Javascript - Niomic</title>
+    </head>
+    <body>
+        <button type="button" onclick="Klik()" name="button">Jalankan</button>
+        <br />
+        <br />
+        <hr />
+        <b>Base URI</b> Property : <br />
+        <p id="contoh">contoh</p>
+        <hr />
+        <b>Body</b> Property : <br />
+        <p id="1">contoh</p>
+        <hr />
+        <b>Create</b> Element : <br /><br />
+
+        <script type="text/javascript">
+
+            function Klik() {
+                var a = document.baseURI;
+                document.getElementById("contoh").innerHTML= a;
+
+                document.body.style.backgroundColor="green";
+                
+                document.getElementById("1").innerHTML = "color : green";
+
+                var c = document.createElement("input");
+                document.body.appendChild(c);
+
+                
+            }
+
+        </script>
+
+        <!-- uri Proprty -->
+        <!-- Body Proprty -->
+        <!-- Document cookie -->
+        <!-- Document url -->
+        <!-- Create Element()  -->
+        <!-- <button onclick="Tombol()">klik</button>
+
+        <p id="contoh">contoh</p> -->
+        <!-- <p id="contoh1">contoh</p>
+        <p id="contoh2">contoh</p> -->
+
+        <!-- <script type="text/javascript">
+            function Tombol() {
+                // var a = document.baseURI;
+                // document.getElementById("contoh").innerHTML=a;
+
+                // document.body.style.backgroundColor= "green";
+                
+                // document.cookie = "username=Admin";
+                // var b = document.cookie;
+                // document.getElementById("contoh1").innerHTML= "cookie = " + b;
+
+                // var c = document.documentURI;
+                // document.getElementById("contoh2").innerHTML= c;
+
+                // var a = document.createElement("button");
+                // a.innerHTML = "tombol"
+                // document.body.appendChild(a);
+            }
+
+        </script> -->
+
+    </body>
+
+</html>
