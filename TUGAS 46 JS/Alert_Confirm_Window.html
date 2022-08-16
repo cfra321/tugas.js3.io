@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <button onclick="anda_yakin()">Klik Saya</button>
+
+        <p id="hasil"></p>
+
+        <script>
+            function anda_yakin() {
+                
+                var text;
+                var r = confirm("Anda Yakin?");
+                if(r == true){
+                    text = "Kamu Telah Yakin";
+                }
+                else{
+                    text = "Kamu Tidak Yakin";
+                }
+
+                document.getElementById("hasil").innerHTML=text;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <button onclick="bukawin()">Buka window</button>
+        <button onclick="tutupwin()">Tutup window</button>
+
+        <script>
+            var myWindow;
+
+            function bukawin() {
+                myWindow = window.open("","Niomic","width=500,height=400")
+                myWindow.document.write("<p>Anda Berhasil Membuka Window</p>")
+                
+            }
+
+            function tutupwin() {
+                myWindow.close();
+                
+            }
+        </script>
+    </body>
+</html>
